@@ -1,0 +1,49 @@
+{
+  "name": "ejercicio_api_rest_films",
+  "version": "1.0.0",
+  "description": "Ejercicio_API_REST_Films",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierEspinosaP/Ejercicio_API_REST_Express_Films.git"
+  },
+  "author": "Javier Espinosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavierEspinosaP/Ejercicio_API_REST_Express_Films/issues"
+  },
+  "homepage": "https://github.com/JavierEspinosaP/Ejercicio_API_REST_Express_Films#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-stare": "^2.5.1",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "reporters": [
+      "default",
+      [
+        "jest-stare",
+        {
+          "resultDir": "results/jest-stare",
+          "reportTitle": "jest-stare!",
+          "additionalResultsProcessors": [
+            "jest-junit"
+          ],
+          "coverageLink": "../../coverage/lcov-report/index.html",
+          "jestStareConfigJson": "jest-stare.json",
+          "jestGlobalConfigJson": "globalStuff.json"
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
